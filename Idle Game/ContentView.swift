@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var gameManager = GameManager.shared
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if gameManager.money >= 10 {
+            TabView {
+                Tab("Home", systemImage: "house") {
+                    HomeView()
+                }
+                Tab("Shop", systemImage: "cart") {
+                    ShopView()
+                }
+            }
         }
-        .padding()
+        else {
+            TabView {
+                Tab("Home", systemImage: "house") {
+                    HomeView()
+                }
+            }
+        }
     }
 }
 
