@@ -10,7 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject private var gameManager = GameManager.shared
     var body: some View {
-        if gameManager.money >= 10 {
+        Text("Money: \(gameManager.money)")
+        Text("All Time Money: \(gameManager.allTimeMoney)")
+        Button("Reset Money") {
+            gameManager.resetMoney()
+        }
+        Button("Reset Purchased Items") {
+            ShopManager.shared.resetPurchasedItems()
+        }
+        if gameManager.allTimeMoney >= 10 {
             TabView {
                 Tab("Home", systemImage: "house") {
                     HomeView()
@@ -18,6 +26,12 @@ struct ContentView: View {
                 Tab("Shop", systemImage: "cart") {
                     ShopView()
                 }
+                // Tab("Whiskers", systemImage: "face.smiling") {
+                //     Whiskers()
+                // }
+                // Tab("Whiskers2", systemImage: "face.smiling.fill") {
+                //     🌟WhiskersFinder300()
+                // }
             }
         }
         else {

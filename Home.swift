@@ -22,7 +22,7 @@ struct HomeView: View {
             .buttonBorderShape(.capsule)
             .controlSize(.large)
             .sensoryFeedback(.impact, trigger: gameManager.money)
-            .sensoryFeedback(.success, trigger: gameManager.money == 10)
+            .sensoryFeedback(.success, trigger: gameManager.allTimeMoney == 10)
 
             // .tint(.red)
             // .background(.red)
