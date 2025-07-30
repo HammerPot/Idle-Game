@@ -14,7 +14,7 @@ struct HomeView: View {
         VStack {
             Button("Tap Me") {
                 print("Button Tapped")
-                gameManager.addMoney(amount: 1)
+                gameManager.addMoney(amount: gameManager.tapStrength)
                 print(gameManager.money)
             }
             // .buttonRepeatBehavior(.enabled)
