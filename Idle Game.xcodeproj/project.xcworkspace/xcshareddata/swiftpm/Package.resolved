@@ -1,0 +1,24 @@
+{
+  "originHash" : "36fa2072eefe4402dfb553ccb708b8af3ab99b52c0c43c368c2aa74e84163c65",
+  "pins" : [
+    {
+      "identity" : "swiftui-snackbar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chrisnyw/SwiftUI-Snackbar",
+      "state" : {
+        "revision" : "c62d8622ffbdef00218c1d5b93b32074ac0fbdcb",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+        "version" : "5.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}

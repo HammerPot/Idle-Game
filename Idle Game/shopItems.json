@@ -1,0 +1,115 @@
+[
+    {
+        "id": 1,
+        "name": "Tap Power-Up",
+        "price": 10,
+        "description": "Make taps worth 2 money.",
+        "requirement": null,
+        "netRequirement": null,
+        "type": "tap",
+        "value": 2
+    },
+	{
+		"id": 2,
+		"name": "Tap Power-Up 2",
+		"price": 50,
+		"description": "Make taps worth 5 money.",
+		"requirement": 1,
+		"netRequirement": null,
+		"type": "tap",
+		"value": 5
+	},
+	{
+		"id": 3,
+		"name": "Tap Power-Up 3",
+		"price": 150,
+		"description": "Make taps worth 10 money.",
+		"requirement": 2,
+		"netRequirement": null,
+		"type": "tap",
+		"value": 10
+	},
+	{
+		"id": 4,
+		"name": "Auto Income",
+		"price": 750,
+		"description": "Make money automatically.",
+		"requirement": null,
+		"netRequirement": 1000,
+		"type": "auto",
+		"value": 1
+	},
+	{
+		"id": 5,
+		"name": "Auto Income 2",
+		"price": 500,
+		"description": "Make money automatically, but better!",
+		"requirement": 4,
+		"netRequirement": null,
+		"type": "auto",
+		"value": 10
+	},
+	{
+		"id": 6,
+		"name": "Double Double",
+		"price": 1000,
+		"description": "Double the fun, Double the money, Double the everything!",
+		"requirement": 5,
+		"netRequirement": null,
+		"type": "both",
+		"value": 2
+	},
+	{
+		"id": 7,
+		"name": "Sacrifice tap for auto income",
+		"price": 1750,
+		"description": "Sharing is caring, or something like that. I don't know... I'm not a philosopher. (-15 tap strength, +15 auto income)",
+		"requirement": 6,
+		"netRequirement": null,
+		"type": "sacrifice",
+		"value": 15
+	},
+	{
+		"id": 8,
+		"name": "New Button",
+		"price": 2250,
+		"description": "Add a new button to the screen. Grants double the money of a standard tap.",
+		"requirement": 7,
+		"netRequirement": null,
+		"type": "button",
+		"value": 2,
+		"buttonName": "Tap Me!"
+	},
+	{
+		"id": 9,
+		"name": "Auto Income Button",
+		"price": 2000,
+		"description": "Add a new button to the screen. 10 taps will grant 1 auto income.",
+		"requirement": 8,
+		"netRequirement": null,
+		"type": "buttonAuto",
+		"value": 10,
+		"buttonName": "Automation?",
+		"multiplier": 1
+	},
+	{
+		"id": 10,
+		"name": "Colorful Taps",
+		"price": 10000,
+		"description": "Make taps colorful.",
+		"requirement": null,
+		"netRequirement": 69420,
+		"type": "colorful",
+		"value": 1
+	},
+	{
+		"id": 11,
+		"name": "Colorful Taps 2",
+		"price": 1000,
+		"description": "Make colorful taps utilize their full potential.",
+		"requirement": 10,
+		"netRequirement": null,
+		"type": "colorful",
+		"value": 2
+	}
+]

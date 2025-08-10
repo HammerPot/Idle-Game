@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69CCFFAE2E0BDF0800B3E242 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCFFAD2E0BDF0800B3E242 /* Home.swift */; };
+		69B640D92E3DC7760068FC13 /* SwiftUISnackbar in Frameworks */ = {isa = PBXBuildFile; productRef = 69B640D82E3DC7760068FC13 /* SwiftUISnackbar */; };
+		69B640DE2E3EBE0C0068FC13 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 69B640DD2E3EBE0C0068FC13 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,6 @@
 		69CCFF812E0B4FC700B3E242 /* Idle Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Idle Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CCFF8E2E0B4FC900B3E242 /* Idle GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Idle GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CCFF982E0B4FC900B3E242 /* Idle GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Idle GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69CCFFAD2E0BDF0800B3E242 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -57,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B640DE2E3EBE0C0068FC13 /* SwiftyJSON in Frameworks */,
+				69B640D92E3DC7760068FC13 /* SwiftUISnackbar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,13 +79,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69B640D72E3DC7760068FC13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69CCFF782E0B4FC700B3E242 = {
 			isa = PBXGroup;
 			children = (
-				69CCFFAD2E0BDF0800B3E242 /* Home.swift */,
 				69CCFF832E0B4FC700B3E242 /* Idle Game */,
 				69CCFF912E0B4FC900B3E242 /* Idle GameTests */,
 				69CCFF9B2E0B4FC900B3E242 /* Idle GameUITests */,
+				69B640D72E3DC7760068FC13 /* Frameworks */,
 				69CCFF822E0B4FC700B3E242 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +127,8 @@
 			);
 			name = "Idle Game";
 			packageProductDependencies = (
+				69B640D82E3DC7760068FC13 /* SwiftUISnackbar */,
+				69B640DD2E3EBE0C0068FC13 /* SwiftyJSON */,
 			);
 			productName = "Idle Game";
 			productReference = 69CCFF812E0B4FC700B3E242 /* Idle Game.app */;
@@ -201,6 +212,10 @@
 			);
 			mainGroup = 69CCFF782E0B4FC700B3E242;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				69B640D62E3DC5190068FC13 /* XCRemoteSwiftPackageReference "SwiftUI-Snackbar" */,
+				69B640DC2E3EBE0C0068FC13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 69CCFF822E0B4FC700B3E242 /* Products */;
 			projectDirPath = "";
@@ -242,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69CCFFAE2E0BDF0800B3E242 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +425,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +456,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +593,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69B640D62E3DC5190068FC13 /* XCRemoteSwiftPackageReference "SwiftUI-Snackbar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chrisnyw/SwiftUI-Snackbar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		69B640DC2E3EBE0C0068FC13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69B640D82E3DC7760068FC13 /* SwiftUISnackbar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69B640D62E3DC5190068FC13 /* XCRemoteSwiftPackageReference "SwiftUI-Snackbar" */;
+			productName = SwiftUISnackbar;
+		};
+		69B640DD2E3EBE0C0068FC13 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69B640DC2E3EBE0C0068FC13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69CCFF792E0B4FC700B3E242 /* Project object */;
 }

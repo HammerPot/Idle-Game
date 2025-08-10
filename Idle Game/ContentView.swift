@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import SwiftUISnackbar
+
 
 struct ContentView: View {
     @ObservedObject private var gameManager = GameManager.shared
+    
     var body: some View {
         Text("Money: \(gameManager.money)")
         Text("All Time Money: \(gameManager.allTimeMoney)")
+        Text("Tap Strength: \(gameManager.tapStrength)")
+        Text("Auto Income Rate: \(gameManager.autoIncomeRate)")
+        Text("Color Mode: \(gameManager.colorMode)")
         Button("Reset Money") {
             gameManager.resetMoney()
         }
@@ -32,6 +38,13 @@ struct ContentView: View {
                 // Tab("Whiskers2", systemImage: "face.smiling.fill") {
                 //     🌟WhiskersFinder300()
                 // }
+            }
+            .snackbarView(snackbar: $gameManager.snackbar)
+            .onAppear {
+                if !gameManager.isShopOpen {
+                    gameManager.openShop()
+                    print("Shop is open (ContentView)")
+                }
             }
         }
         else {
